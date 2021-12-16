@@ -1,16 +1,18 @@
 .logo {
   @extend %link;
+  @include font($f-s: 24px, $l-h: 1.17);
   color: $fourth-color;
   font-family: Raleway;
-  @include font($f-s: 26px, $l-h: 1.19);
-  min-width: 145px;
   &--accent {
     color: $accent-color;
   }
+
+  // @include font($f-s: 26px, $l-h: 1.19);
+  // min-width: 145px;
 }
 
 .footer__logo {
-  margin-bottom: 20px;
+  // margin-bottom: 20px;
   &--white {
     color: $third-color;
   }

@@ -3,13 +3,13 @@
 }
 .portfolio__list {
   @extend %list;
-  @include flexCentered();
-  margin-bottom: 50px;
+  // @include flexCentered();
+  // margin-bottom: 50px;
 }
 
-.portfolio__item:not(last-child) {
-  margin-right: 10px;
-}
+// .portfolio__item:not(last-child) {
+//   margin-right: 10px;
+// }
 
 .portfolio__button {
   @extend %pointer;
@@ -33,21 +33,21 @@
 
 .cardset {
   @extend %list;
-  display: flex;
-  flex-wrap: wrap;
+  // display: flex;
+  // flex-wrap: wrap;
 }
 
-.card {
-  flex-basis: calc((100% - 60px) / 3);
-  margin-right: 30px;
-  margin-bottom: 30px;
-  &:nth-child(3n) {
-    margin-right: 0;
-  }
-  &:nth-last-child(-n + 3) {
-    margin-bottom: 0;
-  }
-}
+// .card {
+//   flex-basis: calc((100% - 60px) / 3);
+//   margin-right: 30px;
+//   margin-bottom: 30px;
+//   &:nth-child(3n) {
+//     margin-right: 0;
+//   }
+//   &:nth-last-child(-n + 3) {
+//     margin-bottom: 0;
+//   }
+// }
 
 .card__link {
   @extend %link;
@@ -89,7 +89,7 @@
 }
 
 .card__title {
-  margin-bottom: 5px;
+  // margin-bottom: 5px;
   color: $second-color;
   @include font($f-s: 18px, $l-h: 2, $l-s: 0.06em);
 }

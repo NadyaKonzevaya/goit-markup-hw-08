@@ -1,21 +1,21 @@
 .team {
   @include sectionPadding(94px, 94px);
-  max-width: 1600px;
-  margin-right: auto;
-  margin-left: auto;
+  // max-width: 1600px;
+  // margin-right: auto;
+  // margin-left: auto;
   background-color: $background-btn-color;
 }
 
 .team__item {
-  margin-right: 30px;
+  // margin-right: 30px;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   text-align: center;
-  &:last-child {
-    margin-right: 0;
-  }
+  // &:last-child {
+  //   margin-right: 0;
+  // }
 }
 
 .team__info {
@@ -30,11 +30,11 @@
   text-align: center;
 }
 
-.team__title {
-  margin-bottom: 10px;
-}
+// .team__title {
+//   margin-bottom: 10px;
+// }
 
 .team__text {
   color: $main-color;
-  margin-bottom: 16px;
+  // margin-bottom: 16px;
 }
