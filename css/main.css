@@ -237,11 +237,11 @@ img {
   background-color: transparent;
 }
 
-.header-nav__button .header-nav__icon-close {
+.header-nav__button .header-nav__icon-cross {
   display: none;
 }
 
-.header-nav__button.is-open .header-nav__icon-close {
+.header-nav__button.is-open .header-nav__icon-cross {
   display: block;
 }
 
