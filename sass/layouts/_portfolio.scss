@@ -1,101 +1,101 @@
-.portfolio {
-  @include sectionPadding(94px, 94px);
-}
-.portfolio__list {
-  @extend %list;
-  // @include flexCentered();
-  // margin-bottom: 50px;
-}
-
-// .portfolio__item:not(last-child) {
-//   margin-right: 10px;
+// .portfolio {
+//   @include sectionPadding(94px, 94px);
+// }
+// .portfolio__list {
+//   @extend %list;
+//   // @include flexCentered();
+//   // margin-bottom: 50px;
 // }
 
-.portfolio__button {
-  @extend %pointer;
-  border: 1px solid transparent;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  padding: 6px 22px;
-  border-radius: 4px;
-  color: $second-color;
-  background-color: $background-btn-color;
-  @include font($f-s: 16px, $f-w: 500, $l-h: 1.63);
-  &:hover,
-  &:focus {
-    color: $third-color;
-    background-color: $accent-color;
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-      0px 2px 2px rgba(0, 0, 0, 0.12);
-  }
-}
+// // .portfolio__item:not(last-child) {
+// //   margin-right: 10px;
+// // }
 
-.cardset {
-  @extend %list;
-  // display: flex;
-  // flex-wrap: wrap;
-}
-
-// .card {
-//   flex-basis: calc((100% - 60px) / 3);
-//   margin-right: 30px;
-//   margin-bottom: 30px;
-//   &:nth-child(3n) {
-//     margin-right: 0;
-//   }
-//   &:nth-last-child(-n + 3) {
-//     margin-bottom: 0;
+// .portfolio__button {
+//   @extend %pointer;
+//   border: 1px solid transparent;
+//   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+//     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+//     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+//   padding: 6px 22px;
+//   border-radius: 4px;
+//   color: $second-color;
+//   background-color: $background-btn-color;
+//   @include font($f-s: 16px, $f-w: 500, $l-h: 1.63);
+//   &:hover,
+//   &:focus {
+//     color: $third-color;
+//     background-color: $accent-color;
+//     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+//       0px 2px 2px rgba(0, 0, 0, 0.12);
 //   }
 // }
 
-.card__link {
-  @extend %link;
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  &:hover,
-  &:focus {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-      1px 4px 6px rgba(0, 0, 0, 0.16);
-  }
-}
+// .cardset {
+//   @extend %list;
+//   // display: flex;
+//   // flex-wrap: wrap;
+// }
 
-.card__wrap {
-  position: relative;
-  overflow: hidden;
-}
+// // .card {
+// //   flex-basis: calc((100% - 60px) / 3);
+// //   margin-right: 30px;
+// //   margin-bottom: 30px;
+// //   &:nth-child(3n) {
+// //     margin-right: 0;
+// //   }
+// //   &:nth-last-child(-n + 3) {
+// //     margin-bottom: 0;
+// //   }
+// // }
 
-.card__label {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  background-color: rgba(33, 150, 243, 0.9);
-  padding: 63px 24px;
-  font-size: 18px;
-  line-height: 1.6;
-  color: $third-color;
-  transform: translateY(101%);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  .card__link:hover &,
-  .card__link:focus & {
-    transform: translateY(0);
-  }
-}
+// .card__link {
+//   @extend %link;
+//   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+//   &:hover,
+//   &:focus {
+//     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+//       1px 4px 6px rgba(0, 0, 0, 0.16);
+//   }
+// }
 
-.card__info {
-  border: 1px solid #eeeeee;
-  padding: 20px 24px;
-  border-top: none;
-}
+// .card__wrap {
+//   position: relative;
+//   overflow: hidden;
+// }
 
-.card__title {
-  // margin-bottom: 5px;
-  color: $second-color;
-  @include font($f-s: 18px, $l-h: 2, $l-s: 0.06em);
-}
+// .card__label {
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   height: 100%;
+//   background-color: rgba(33, 150, 243, 0.9);
+//   padding: 63px 24px;
+//   font-size: 18px;
+//   line-height: 1.6;
+//   color: $third-color;
+//   transform: translateY(101%);
+//   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+//   .card__link:hover &,
+//   .card__link:focus & {
+//     transform: translateY(0);
+//   }
+// }
 
-.card__text {
-  color: $main-color;
-  font-size: 16px;
-  line-height: 1.87;
-}
+// .card__info {
+//   border: 1px solid #eeeeee;
+//   padding: 20px 24px;
+//   border-top: none;
+// }
+
+// .card__title {
+//   // margin-bottom: 5px;
+//   color: $second-color;
+//   @include font($f-s: 18px, $l-h: 2, $l-s: 0.06em);
+// }
+
+// .card__text {
+//   color: $main-color;
+//   font-size: 16px;
+//   line-height: 1.87;
+// }
