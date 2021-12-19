@@ -1,18 +1,18 @@
-// .button {
-//   // min-width: 200px;
-//   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-//   border-radius: 4px;
-//   color: $third-color;
-//   background-color: $accent-color;
-//   @include font($f-s: 16px, $l-h: 1.88, $l-s: 0.06em);
-//   border: 1px solid transparent;
-//   @extend %pointer;
-// }
+.button {
+  // min-width: 200px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  color: $third-color;
+  background-color: $accent-color;
+  @include font($f-s: 16px, $l-h: 1.88, $l-s: 0.06em);
+  border: 1px solid transparent;
+  @extend %pointer;
+}
 
-// .hero__button {
-//   display: inline-block;
-//   padding: 10px 32px;
-// }
+.hero__button {
+  display: inline-block;
+  padding: 10px 32px;
+}
 
 // .form__button {
 //   // @include flexCentered;

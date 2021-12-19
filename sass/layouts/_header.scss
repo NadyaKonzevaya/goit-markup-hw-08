@@ -196,16 +196,19 @@
 
 .header-contact__link {
   @extend %link;
+  color: $main-color;
+  @include font($f-s: 24px, $f-w: 500, $l-h: 1.17, $l-s: 0.02em);
+  &--tel {
+    color: $accent-color;
+    @include font($f-s: 26px, $f-w: 500, $l-h: 1.18, $l-s: 0.02em);
+  }
   &:hover,
   &:focus {
     color: $accent-color;
   }
 
-  @media screen and (max-width: 767px) {
-    color: $main-color;
-    @include font($f-s: 24px, $f-w: 500, $l-h: 1.17, $l-s: 0.02em);
+  @media screen and (min-width: 380px) {
     &--tel {
-      color: $accent-color;
       @include font($f-s: 34px, $f-w: 500, $l-h: 1.18, $l-s: 0.02em);
     }
   }
@@ -265,7 +268,7 @@
 }
 
 .header-media__item {
-  @include font($f-s: 18px, $f-w: 500, $l-h: 1.22, $l-s: 0.02em);
+  @include font($f-s: 12px, $f-w: 500, $l-h: 1.22, $l-s: 0.02em);
   &:not(:last-child) ::after {
     content: '';
     display: block;
@@ -273,6 +276,10 @@
     height: 1px;
     background-color: rgba(33, 33, 33, 0.2);
     transform: rotate(90deg);
+  }
+
+  @media screen and (min-width: 420px) {
+    @include font($f-s: 18px, $f-w: 500, $l-h: 1.22, $l-s: 0.02em);
   }
 }
 
