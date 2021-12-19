@@ -147,7 +147,7 @@ summary {
 .team__list,
 .partners__list, .header-nav__list,
 .header-contact__list,
-.header-media__list {
+.header-media__list, .advant__list {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -602,6 +602,80 @@ img {
     line-height: 1.36;
     letter-spacing: 0.06em;
   }
+}
+
+.advant {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .advant {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .advant__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .advant__item {
+    width: 100%;
+  }
+  .advant__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .advant__item {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .advant__item {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: calc((100% - 8 * 15px) / 4);
+    margin: 15px;
+  }
+}
+
+.advant__thumb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: #f5f4fa;
+  width: 100%;
+}
+
+.advant__icon {
+  display: block;
+  width: 70px;
+  height: 70px;
+}
+
+.advant__title {
+  margin-bottom: 10px;
+  color: #212121;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 .container {

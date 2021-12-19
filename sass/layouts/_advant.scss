@@ -1,38 +1,70 @@
-// .advant {
-//   @include sectionPadding(94px, 94px);
-// }
+.advant {
+  @include sectionPadding(60px, 60px);
 
-// .advant__list {
-//   @extend %list;
-//   // display: flex;
-// }
+  @media screen and (min-width: 1200px) {
+    @include sectionPadding(94px, 94px);
+  }
+}
 
-// // .advant__item {
-// //   // width: 270px;
-// //   &:not(:last-child) {
-// //     // margin-right: 30px;
-// //   }
-// // }
+.advant__list {
+  @extend %list;
 
-// .advant__thumb {
-//   // @include flexCentered();
-//   // height: 120px;
-//   // margin-bottom: 30px;
-//   background-color: $background-btn-color;
-// }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+}
 
-// .advant__icon {
-//   display: block;
-//   // width: 70px;
-//   // height: 70px;
-// }
+.advant__item {
+  @media screen and (max-width: 767px) {
+    width: 100%;
 
-// .advant__title {
-//   // margin-bottom: 10px;
-//   color: $second-color;
-//   @include font();
-//   text-transform: uppercase;
-// }
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: calc((100% - 8 * 15px) / 4);
+    margin: 15px;
+  }
+  // // width: 270px;
+  // &:not(:last-child) {
+  //   // margin-right: 30px;
+  // }
+}
+
+.advant__thumb {
+  @include flexCentered();
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: $background-btn-color;
+  width: 100%;
+}
+
+.advant__icon {
+  display: block;
+  width: 70px;
+  height: 70px;
+}
+
+.advant__title {
+  margin-bottom: 10px;
+  color: $second-color;
+  @include font();
+  text-transform: uppercase;
+  text-align: center;
+}
 
 // .advant__text {
 //   font-size: 14px;
