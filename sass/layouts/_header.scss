@@ -162,7 +162,7 @@
       position: absolute;
       display: inline-flex;
       align-items: center;
-      bottom: -1px;
+      bottom: -1.5px;
       left: 0;
       content: '';
       display: block;
@@ -170,6 +170,12 @@
       height: 4px;
       background-color: $accent-color;
       border-radius: 2px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    &--current::after {
+      bottom: -1px;
     }
   }
 }
