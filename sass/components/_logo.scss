@@ -1,5 +1,6 @@
 .logo {
   @extend %link;
+  min-width: 134px;
   @include font($f-s: 24px, $l-h: 1.17);
   color: $fourth-color;
   font-family: Raleway;
@@ -7,8 +8,17 @@
     color: $accent-color;
   }
 
-  // @include font($f-s: 26px, $l-h: 1.19);
-  // min-width: 145px;
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+  }
+
+  @media screen and (min-width: 1200px) {
+    @include font($f-s: 26px, $l-h: 1.19);
+    min-width: 145px;
+  }
 }
 
 .footer__logo {
