@@ -4,7 +4,6 @@
   @include font($f-w: 400, $l-h: 1.71);
 }
 
-.team__list,
 .partners__list {
   @extend %list;
   // display: -webkit-box;
