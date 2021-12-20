@@ -3,10 +3,3 @@
   font-family: Roboto, sans-serif;
   @include font($f-w: 400, $l-h: 1.71);
 }
-
-.partners__list {
-  @extend %list;
-  // display: -webkit-box;
-  // display: -ms-flexbox;
-  // display: flex;
-}
