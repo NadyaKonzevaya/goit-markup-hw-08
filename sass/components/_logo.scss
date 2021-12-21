@@ -1,6 +1,5 @@
-.logo {
+.logo--absolute {
   @extend %link;
-  min-width: 134px;
   @include font($f-s: 24px, $l-h: 1.17);
   color: $fourth-color;
   font-family: Raleway;
@@ -17,12 +16,25 @@
 
   @media screen and (min-width: 1200px) {
     @include font($f-s: 26px, $l-h: 1.19);
-    min-width: 145px;
+  }
+}
+
+.logo {
+  @extend %link;
+  @include font($f-s: 24px, $l-h: 1.17);
+  color: $fourth-color;
+  font-family: Raleway;
+  &--accent {
+    color: $accent-color;
+  }
+  @media screen and (min-width: 1200px) {
+    @include font($f-s: 26px, $l-h: 1.19);
   }
 }
 
 .footer__logo {
-  // margin-bottom: 20px;
+  font-style: normal;
+  margin-bottom: 20px;
   &--white {
     color: $third-color;
   }
