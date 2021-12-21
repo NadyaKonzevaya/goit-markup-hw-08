@@ -1017,8 +1017,27 @@ img {
   margin: -15px;
 }
 
+@media screen and (min-width: 768px) {
+  .cardset {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
 .card {
   margin: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .card {
+    flex-basis: calc((100% - 4 * 15px) / 2);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .card {
+    flex-basis: calc((100% - 6 * 15px) / 3);
+  }
 }
 
 .card__link {
@@ -1040,7 +1059,7 @@ img {
   left: 0;
   height: 100%;
   background-color: rgba(33, 150, 243, 0.9);
-  padding: 63px 24px;
+  padding: 20px 24px;
   font-size: 18px;
   line-height: 1.6;
   color: #ffffff;
@@ -1057,6 +1076,12 @@ img {
   border: 1px solid #eeeeee;
   padding: 20px 24px;
   border-top: none;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .card__info--large {
+    padding: 20px 24px 56px 24px;
+  }
 }
 
 .card__title {
