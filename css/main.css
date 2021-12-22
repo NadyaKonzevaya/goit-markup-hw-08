@@ -950,6 +950,15 @@ img {
   }
 }
 
+@media screen and (max-width: 397px) {
+  .portfolio__item:not(:nth-child(2n + 2)) {
+    margin-right: 8px;
+  }
+  .portfolio__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .portfolio__item:not(:nth-child(2n + 3)) {
     margin-right: 8px;
