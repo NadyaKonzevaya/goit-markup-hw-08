@@ -3,3 +3,14 @@
   font-family: Roboto, sans-serif;
   @include font($f-w: 400, $l-h: 1.71);
 }
+
+.advant,
+.partners,
+.portfolio,
+.team {
+  @include sectionPadding(60px, 60px);
+
+  @media screen and (min-width: 1200px) {
+    @include sectionPadding(94px, 94px);
+  }
+}
