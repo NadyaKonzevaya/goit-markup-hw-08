@@ -760,7 +760,7 @@ img {
 }
 
 @media screen and (max-width: 767px) {
-  .team__item {
+  .team__item:not(:last-child) {
     margin-bottom: 30px;
   }
 }
@@ -934,6 +934,7 @@ img {
 @media screen and (max-width: 767px) {
   .portfolio__list {
     margin-top: -10px;
+    margin-left: -8px;
   }
 }
 
@@ -953,7 +954,7 @@ img {
 }
 
 .portfolio__item {
-  margin-right: 8px;
+  margin-left: 8px;
 }
 
 @media screen and (max-width: 767px) {

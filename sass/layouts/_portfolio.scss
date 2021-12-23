@@ -6,6 +6,7 @@
 
   @media screen and (max-width: 767px) {
     margin-top: -10px;
+    margin-left: -8px;
   }
 
   @media screen and (min-width: 768px) {
@@ -19,7 +20,7 @@
 }
 
 .portfolio__item {
-  margin-right: 8px;
+  margin-left: 8px;
 
   @media screen and (max-width: 767px) {
     margin-top: 10px;
